@@ -60,51 +60,31 @@ body, button, input{
 .search{
   margin: 0 20px;
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
   height: 5vh;
   width: 30%;
   border-radius: 20px;
   border: 1px solid var(--primarycolor);
+  overflow: hidden;
+  background: #fff;
 }
 .search input{
   padding: 10px;
-  height: 100%;
   width: 100%;
-  border: 1px solid var(--primarycolor);
-  border-radius: 10px;
   border: none;
+  outline: none;
+  box-shadow: none;
   font-weight: 300;
-  position: relative;
-  background: transparent;
-}
-.search input:hover{
-   padding: 10px;
-   background: #999;
-   background: transparent;
-   border: none;
 }
 .search i{
-  
-  z-index: 100;
+ margin-right: 10px; 
+ transition: .4s;
 }
-search i:hover{
-  background: red;
-}
-#btn{
-  width: 20%;
-  margin: 5px;
-  padding: 2px;
-  border-bottom: 2px solid var(--primarycolor);
-  background: var(--bgcolor-1);
-  color: var(--lightcolor);
-  border-radius: 20px;
-  transition: 0.4s;
-}
-#btn:hover{
-    background: transparent;
-    border: 2px solid var(--primarycolor);
-    color: var(--lightcolor);
+.search i:hover{
+  scale: 1.2;
+  cursor: pointer;
+  color: var (--secondarycolor);
 }
 nav ul {
   display: flex;
@@ -447,8 +427,59 @@ border-bottom: 1px solid var(--lightcolor);
   font-size: 20px;
   font-family: "Marhey", sans-serif;
 }
-
-
+#refresh{
+  background: car(--bgcolor-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+#refresh .ref-content{
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  padding: 1rem;
+  background: var(--bgcolor-3);
+  color: var(--secondarycolor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: 1px 1px 15px vae(--lighting-color);
+}
+#refresh .ref-content h1{
+  color: var(--primarycolor);
+  margin-bottom: 2rem;
+}
+#refresh .ref-content h3{
+  margin-bottom: 1rem;
+}
+footer{
+  padding:20px 0;
+  background: #444;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+ footer p{
+  font-size: 12x;
+}
+footer span{
+  color: var(--primarycolor);
+}
+.social-icons a {
+  text-decoration: none;
+}
+.social-icons img{
+  width: 20px;
+  margin: 10px;
+  transition: .4s;
+}
+.social-icons img:hover{
+  scale: 1.2;
+}
 @media screen and (max-width: 575px){
   
    nav ul{
