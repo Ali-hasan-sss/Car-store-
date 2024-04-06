@@ -347,6 +347,22 @@ nav ul li a{
   text-align: center;
   transition: .4s;
 }
+#shop .tp{
+  min-width: 200px;
+  min-height: 50px;
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  background: #aa7d61a4;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: .4s;
+}
+#shop .tp:hover{
+  scale: 1.1;
+}
 #shop .km:hover{
   scale: 1.1;
 }
@@ -480,7 +496,7 @@ footer span{
 .social-icons img:hover{
   scale: 1.2;
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 575px){
   
    nav ul{
     display: none;
@@ -500,16 +516,16 @@ nav ul.is-active{
     display: block;
 }
   .navbar{
-    margin: 0 2px;
+    padding: 0 2px;
   }
   #btn{
-  left: 0;
+  left: 5px;
   }
   .search{
     width: 70%;
   }
   .logo{
-    15%
+    width: 15%;
   }
   #menu span{
     display: block;
@@ -520,6 +536,7 @@ nav ul.is-active{
     align-items: center;
     height: 100vh;
     width: 100%;
+    padding: 1rem;
   }
   #home .image-content{
     display: flex;
